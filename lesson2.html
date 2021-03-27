@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //задание 1
+        var a = 1, b = 1, c, d;
+        c = ++a; alert(c);           // 2 с= 1+1
+        d = b++; alert(d);           // 1 с= а=1  постфиксная форма, увеличивает переменную а на 1, но с= переменной а до увеличения
+        c = (2 + ++a); alert(c);      // 5 c=2+(1+2)
+        d = (2 + b++); alert(d);      // 4 c=2+2
+        alert(a);                    // 3 так как к переменной A два раза прибавили еденицу
+        alert(b);                    // 3 так как к переменной B два раза прибавили еденицу
+
+        //задание 2
+
+        var a = 2;
+        var x = 1 + (a *= 2); // x= 1+2*2=5
+
+        //задание 3
+
+        var a = parseInt(Math.random() * (100 + 100) - 100);
+        var b = parseInt(Math.random() * (100 + 100) - 100);
+        alert(a + ` ` + b);
+        if (a >= 0 && b >= 0) {
+            alert("положительные " + (a - b));
+        }
+        else if (a < 0 && b < 0) {
+            alert("отрицательные " + (a * b));
+        }
+        else if ((a >= 0 && b < 0) || (a < 0 && b >= 0)) {
+            alert("разные знаки " + (a + b));
+        }
+
+        //зажание 4
+        var number = prompt("Ведите число от 0 до 15");
+        switch (number) {
+            case "0":
+                alert('0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15');
+                break;
+            case "1":
+                alert('1,2,3,4,5,6,7,8,9,10,11,12,13,14,15');
+                break;
+            case "2":
+                alert('2,3,4,5,6,7,8,9,10,11,12,13,14,15');
+                break;
+            case "3":
+                alert('3,4,5,6,7,8,9,10,11,12,13,14,15');
+                break;
+            case "4":
+                alert('4,5,6,7,8,9,10,11,12,13,14,15');
+                break;
+            case "5":
+                alert('5,6,7,8,9,10,11,12,13,14,15');
+                break;
+            case "6":
+                alert('6,7,8,9,10,11,12,13,14,15');
+                break;
+            case "7":
+                alert('7,8,9,10,11,12,13,14,15');
+                break;
+            case "8":
+                alert('8,9,10,11,12,13,14,15');
+                break;
+            case "9":
+                alert('9,10,11,12,13,14,15');
+                break;
+            case "10":
+                alert('10,11,12,13,14,15');
+                break;
+            case "11":
+                alert('11,12,13,14,15');
+                break;
+            case "12":
+                alert('11,12,13,14,15');
+                break;
+            case "13":
+                alert('13,14,15');
+                break;
+            case "14":
+                alert('14,15');
+                break;
+            case "15":
+                alert('15');
+                break;
+        }
+        //задание 5
+        var a = 1;
+        var b = 2;
+        function plus(a, b) {
+            return a + b;
+        }
+        function minus(a, b) {
+            return a - b;
+        }
+        function divide(a, b) {
+            return a / b;
+        }
+        function multip(a, b) {
+            return a * b;
+        }
+
+        //задание 6
+        function mathOperation(arg1, arg2, operation) {
+            switch (operation) {
+                case "plus":
+                    return arg1 + arg2;
+                    break;
+                case "minus":
+                    return arg1 - arg2;
+                    break;
+                case "divide":
+                    return arg1 / arg2;
+                    break;
+            }
+        }
+        //задание 7
+        null >= 0; //  true (Сравнение преобразует null в число по этому сравнение равное)
+        null > 0;  //  false ()
+        //задание 8
+
+    </script>
+</body>
+
+</html>
