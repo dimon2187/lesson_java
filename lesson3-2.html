@@ -1,0 +1,46 @@
+<script>
+
+    //задание 2
+    var bin = [
+        {
+            title: "Товар 1",
+            price: 100,
+            count: 3
+        },
+        {
+            title: "Товар 2",
+            price: 200,
+            count: 4
+
+        },
+        {
+            title: "Товар 3",
+            price: 200,
+            count: 2
+        },
+    ];
+    var s = 0;
+    for (var item of bin) {
+        s = s + item.price * item.count;
+        alert("Товар " + item.title + " стоит: " + (item.price * item.count) + " $");
+
+    }
+    alert("Сумма товаров составляет " + s + " $");
+
+
+
+    function countBasketPrice() {
+        var s = 0;
+        for (var item of bin) {
+            s = s + item.price * item.count;
+            document.write("Товар " + item.title + " стоит: " + (item.price * item.count) + " $" + "</br>");
+        }
+        return s;
+    }
+    var total = countBasketPrice(bin);
+    document.write("Сумма товаров составляет " + total + " $");
+
+
+
+
+</script>

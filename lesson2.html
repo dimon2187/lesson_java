@@ -39,7 +39,7 @@
             alert("разные знаки " + (a + b));
         }
 
-        //зажание 4
+        //зажание 4  //break не нужен
         var number = prompt("Ведите число от 0 до 15");
         switch (number) {
             case "0":
@@ -101,7 +101,9 @@
             return a - b;
         }
         function divide(a, b) {
-            return a / b;
+            if (y != o)
+                return a / b;
+            return 0;
         }
         function multip(a, b) {
             return a * b;
