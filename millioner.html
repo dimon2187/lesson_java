@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        var money, yourAnswer, check;
+        var question = {
+            a01: "Какой напиток получают из сахарного тростника? Вопрос на 100$\n",
+            a1: "1-Джин\n",
+            b1: "2-Ром\n",
+            c1: "3-Коньяк\n",
+            d1: "4-Вермут\n",
+            e1: 100,
+
+            a02: "Как назывался первый советский фильм-катастрофа? Вопрос на 200$",
+            a2: "1-34-й скорый\n",
+            b2: "2-Остановился поезд\n",
+            c2: "3-Экипаж\n",
+            d2: "4-Берегись автомобиля\n",
+            e2: 200,
+        };
+        money = 0;
+
+        check = false;
+        for (var i = 1; i <= 2; i++) {
+            yourAnswer = +prompt("Вопрос номер " + i + ":\n " + question.a0 + question.a + question.b + question.c + question.d + " -1 Выход");
+            if (yourAnswer == -1) {
+                alert("Конец игры");
+                break;
+            } else {
+                switch (yourAnswer) {
+                    case 1:
+                        alert("Вы проиграли!!!");
+                        break;
+                    case 3:
+                        alert("Вы проиграли!!!");
+                        break;
+                    case 4:
+                        alert("Вы проиграли!!!");
+                        break;
+                    case 2:
+                        alert("Вы выйграли 100$");
+                        money += 100;
+
+
+                }
+
+            }
+
+        }
+    </script>
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
